@@ -36,3 +36,8 @@ variable "managed_policy_arns" {
   description = "(required)  The IAM managed policy Amazon Resource Name (ARN) to be attached to the Permission Set."
   type        = list(string)
 }
+
+variable "inline_policy_documents" {
+  description = "(required) The list of IAM inline policys to attach to a Permission Set."
+  type        = list(string)
+}
